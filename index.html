@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>XerØtrust</title>
+
+<style>
+html, body {
+  margin: 0;
+  height: 100%;
+  background: #000;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+/* Fullscreen background */
+.hero {
+  position: fixed;
+  inset: 0;
+  background: url("xer0trust-hero.jpg") center center / cover no-repeat;
+  z-index: -1;
+}
+
+/* Top-left links */
+.links {
+  position: fixed;
+  top: 30px;
+  left: 30px;
+  display: grid;
+  gap: 8px;
+}
+
+/* Smaller links (25% reduced) */
+.links a {
+  display: inline-block;
+  padding: 10px 12px;
+  font-size: 0.75rem;
+  text-decoration: none;
+  color: white;
+  font-weight: 600;
+  border: 1px solid rgba(255,255,255,0.25);
+  border-radius: 12px;
+  background: rgba(0,0,0,0.45);
+  backdrop-filter: blur(6px);
+  transition: 0.2s ease;
+}
+
+.links a:hover {
+  background: rgba(255,255,255,0.12);
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .links {
+    top: 20px;
+    left: 20px;
+  }
+
+  .links a {
+    font-size: 0.7rem;
+    padding: 8px 10px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<div class="hero"></div>
+
+<div class="links">
+  <a href="mailto:research@xer0trust.com">Research</a>
+  <a href="mailto:licensing@xer0trust.com">Licensing</a>
+  <a href="https://github.com/sbw70/verification-constraints" target="_blank">GitHub</a>
+  <a href="https://replit.com/@sbw70" target="_blank">Replit @sbw70</a>
+  <a href="https://replit.com/@holiwood4420" target="_blank">Replit @holiwood4420</a>
+</div>
+
+</body>
+</html>
